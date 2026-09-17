@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Course Management System</h1>
+        <p>Manage Courses Easily</p>
+    </header>
+
+    <main>
+
+        <!-- Add Course Form -->
+        <section class="form-section">
+            <h2>Add Course</h2>
+
+            <form id="courseForm">
+
+                <input type="text" id="courseName"
+                       placeholder="Course Name">
+
+                <input type="text" id="courseCode"
+                       placeholder="Course Code">
+
+                <input type="text" id="instructor"
+                       placeholder="Instructor Name">
+
+                <input type="text" id="department"
+                       placeholder="Department">
+
+                <input type="text" id="duration"
+                       placeholder="Duration">
+
+                <input type="number" id="fees"
+                       placeholder="Course Fees">
+
+                <button type="submit">Add Course</button>
+
+            </form>
+        </section>
+
+
+        <!-- Search -->
+        <section class="search-section">
+            <h2>Course List</h2>
+
+            <input type="text" id="search"
+                   placeholder="Search course...">
+        </section>
+
+
+        <!-- Course Table -->
+        <section class="table-section">
+
+            <table id="courseTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Course Name</th>
+                        <th>Code</th>
+                        <th>Instructor</th>
+                        <th>Department</th>
+                        <th>Duration</th>
+                        <th>Fees</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="courseTableBody">
+                    <!-- Courses will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
